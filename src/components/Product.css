@@ -1,0 +1,63 @@
+/* Product.css */
+
+/* General card styles */
+.card {
+    border-color: transparent;
+    transition: all 1s linear;
+  }
+  
+  .card-footer {
+    background: transparent;
+    border-top: transparent;
+    transition: all 1s linear;
+  }
+  
+  /* Hover effect for card */
+  .card:hover {
+    border: 0.04rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-footer:hover {
+    background: rgba(247, 247, 247);
+  }
+  
+  /* Image container styles */
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    transition: all 1s linear;
+  }
+  
+  .img-container:hover .card-img-top {
+    transform: scale(1.2);
+  }
+  
+  /* Cart button styles */
+  .cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    background: var(--lightBlue);
+    color: var(--mainWhite);
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .cart-btn:hover {
+    background: var(--mainWhite);
+    color: var(--lightBlue);
+    cursor: pointer;
+  }
+  
+  .img-container:hover .cart-btn {
+    transform: translate(0, 0);
+  }
+  
